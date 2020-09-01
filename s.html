@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/i.html">About</a>
+  <a href="/s.html">Services</a>
+  <!-- <a href="#">Clients</a> -->
+  <a href="/c.html">Contact</a>
+</div>
+
+<div id="main">
+  
+  <span class="s" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      
+      padding: 20px;
+      font-family: Arial;
+    }
+    
+    /* Center website */
+    .mai {
+      max-width: 1000px;
+      margin: auto;
+    }
+    
+    h1 {  color: #eece1a;
+      font-size: 44px;
+      word-break: break-all;
+    }
+    
+    .row {
+      margin: 8px -16px;
+    }
+    
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+    
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+    
+    /* Clear floats after rows */ 
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    h3{
+        color: #eece1a;
+    }
+    .mai p{
+        color:#df386a;
+    }
+    </style>
+  
+    </head>
+    <body>
+    
+    <!-- MAIN (Center website) -->
+    <div class="mai">
+    
+    <h1 >Our Services</h1>
+    <hr>
+    
+ 
+    <h2>What We Offer</h2>
+   
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="5bg.jfif" alt="Mountains" style="width:100%">
+           <p>WEB DEVELOPMENT</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="2bg.png" alt="Lights" style="width:100%">
+          <p>WEB DESIGN</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="3bg.jfif" alt="Nature" style="width:100%">
+        <p>CUSTOMER SUPPORT</p>
+          <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="4bg.jfif" alt="Mountains" style="width:100%">
+          <p>USER EXPERIENCE</p>
+          <!-- <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p> -->
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <div class="content">
+      <img src="1bg.jfif" alt="Bear" style="width:100%">
+    <p>CREATIVE THEMES</p>
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "#444";
+}
+</script>
+   
+</body>
+</html> 

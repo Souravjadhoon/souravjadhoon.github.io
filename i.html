@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/i.html">About</a>
+  <a href="/s.html">Services</a>
+  <!-- <a href="#">Clients</a> -->
+  <a href="/c.html">Contact</a>
+</div>
+
+<div id="main">
+    <span class="s" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <div class="d"><h2>Sourav</h2>
+  <h2 id="h"> &nbspJadhoon</h2></div>
+  <h3>Web Developer, Programmer, Designer & Entrepreneur.</h3>
+
+  <img class="i" src="/bg.jpg" alt="">
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "#444";
+}
+</script>
+   
+</body>
+</html> 

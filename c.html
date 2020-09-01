@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="s.css">
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/main.css">
+<style>
+body {background-color: #444;
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.fab:hover{  transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0.1ms;
+   transition-timing-function: ease-in-out;
+    color: #eece1a;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.div{
+    display: flex;
+    flex-direction:column;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/i.html">About</a>
+  <a href="/s.html">Services</a>
+  <!-- <a href="#">Clients</a> -->
+  <a href="/c.html">Contact</a>
+</div>
+
+<div id="main">
+ 
+  <span class="s" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<h1>Contact Us</h1><hr>
+<br><br>
+<div class="icons">
+            <a href="#">
+                <i class="fab fa-twitter fa-4x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-facebook fa-4x"></i>
+            </a>
+            <a href=" http://www.instagram.com/being_banna_07">
+                <i class="fab fa-instagram fa-4x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin fa-4x"></i>
+            </a>
+         
+         
+        </div>
+     <div class="div"> <a href="#"><i class="fas fa-envelope fa-4x"></i>&nbsp&nbsp&nbsp&nbsp sourav.jadon1@gmail.com</a>
+      <a href="#"><i class="fas fa-phone fa-4x"></i>&nbsp&nbsp&nbsp&nbsp 1234567890</a>
+    </div>
+    </div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "#444";
+}
+</script>
+   
+</body>
+</html> 
